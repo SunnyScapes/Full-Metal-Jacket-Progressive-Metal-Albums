@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grids And Flex</title>
+    <link rel="stylesheet" href="Assets/css/main.css">
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            background-color: #ccc;
+        }
+        .grid-container div div:nth-child(2){
+            display: flex;
+            gap: 1rem;
+        }
+        .grid-container figure{
+            margin: 0;
+        }
+        .grid-container img{
+            width: 100%;
+        }
+        @media (max-width: 700px) {
+            .grid-container{
+            grid-template-columns: 1fr;
+        }
+        }
+        @media (max-width: 500px) {
+            .grid-container div div:nth-child(2){
+                flex-direction: column;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-main">
+        <section class="grid-container">
+            <div>
+                <img src="assets/images/Uploads/Uploads-05.png" alt="Image-05">
+            </div>
+            <div>
+                <div>RIGHTIE TOP</div>
+                <div>
+                    <figure>
+                        <img src="assets/images/Uploads/Uploads-02.png" alt="Image-01">
+                        <figcaption>
+                            <article>
+                                <header><h3>Caption One</h3></header>
+                                <p>Article text number One</p>
+                                <footer><a href="#">Read more:</a></footer>
+                            </article>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/images/Uploads/Uploads-03.png" alt="Image-02">
+                        <figcaption>
+                            <article>
+                                <header><h3>Caption One</h3></header>
+                                <p>Article text number One</p>
+                                <footer><a href="#">Read more:</a></footer>
+                            </article>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/images/Uploads/Uploads-04.png" alt="Image-03">
+                        <figcaption>
+                            <article>
+                                <header><h3>Caption One</h3></header>
+                                <p>Article text number One</p>
+                                <footer><a href="#">Read more:</a></footer>
+                            </article>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

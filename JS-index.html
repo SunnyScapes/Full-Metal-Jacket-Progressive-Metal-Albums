@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FULL METAL JACKET | Progressive Metal Albums</title>
+    <link rel="stylesheet" href="./Assets/css/main.css">
+    <script src="./Assets/js/validation.js" defer></script>
+    <script src="./Assets/js/gallery.js" defer></script>
+    <script src="./Assets/js/modal.js" defer></script>
+  </head>
+  <body>
+    <div id="container-main">
+      <header class="header-main">
+          <hgroup>
+            <h1>Full Metal Jacket</h1>
+            <h2>Progressive Metal Albums</h2>
+          </hgroup>
+          <img src="assets/images/outerspace.png" alt="">
+
+          <nav class="nav-main">
+            <ul>
+                <li><a href="#" onclick="displayModal('modal_container')">Show me the Modal please!</a></li>
+                <li><a href="#container-main">Home</a></li>
+                <li><a href="#section-gallery">Gallery</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+            </ul>
+          </nav>
+
+          <!-- THIS IS THE "EVENT - HANDLER" -->
+          <!-- <a href="#" onclick="displayModal('modal_container')">Show me the Modal please</a> -->
+      </header>
+
+      <!-- SECTION GALLERY -->
+      <section id="section-gallery">
+              <!-- THE "ORIGINAL IMAGE" THAT IS LOADED VIA THE SRC -->
+              <img src="assets/images/Uploads/Sorry.png" id="imgLarge">
+              
+              <!-- THE CONTAINER ELEMENT (DIV IN THIS CASE) HAS CLASSNAME "imgCon" (Image Container)? -->
+              <div class="gallery_content">
+              <!-- EVERY ELEMENT: "IMG" ("this") HAS A DIFFERENT SOURCE, WHICH WILL REPLACE THE "ORIGINAL ONE" ON "ID:'image-large'" onclick ;0) -->
+                  <img src="assets/images/Uploads/progalbum01.jpg">
+                  <img src="assets/images/Uploads/progalbum02.jpg">
+                  <img src="assets/images/Uploads/progalbum03.jpg">
+                  <img src="assets/images/Uploads/progalbum04.jpg">
+                  <img src="assets/images/Uploads/progalbum05.jpg">
+                  <img src="assets/images/Uploads/progalbum06.jpg">
+                  <img src="assets/images/Uploads/progalbum07.jpg">
+                  <img src="assets/images/Uploads/progalbum08.jpg">
+                  <img src="assets/images/Uploads/progalbum09.jpg">
+              </div>
+      </section>
+      
+      <!-- START OF MODAL -->
+      <div id="modal_container" class="modal">
+        <main>
+      <!-- CLOSING  BUTTON -->
+          <span id="modal_close" onclick="closeModal('modal_container')" title="CLOSE THIS IMAGE"> &times;</span>
+          <div id="modalContent">
+            <img id="photo" src="./Assets/images/Uploads/Sorry.png" alt="Sorry - No Image" />
+          </div>
+        </main>
+      </div>
+      <!-- END OF MODAL -->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+@import url(nav.css);
+@import url(form.css);
+@import url(gallery.css);
+@import url(modal.css);
+
+/* IMPORTS A "GOOGLE FONT" */
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100;200;400;500;700&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+/* VARIABLES IN HTML: */
+:root {
+    --light: #ddd;
+    --medium: #999;
+    --dark: #333;
+    --black: #212121;
+    --primary: #4ae;
+    --secondary: #ddd;
+    --danger: #d44;
+    --success: #3b833b;
+}
+body{
+    font-family:'Smooch Sans', sans-serif; /*"SMOOCH SANS" IS A GOOGLE FONT*/
+    font-weight: 400;
+    background-color: var(--dark);
+    margin: 0;
+}
+
+hgroup {
+    /* display: flex; */
+    position: absolute;
+    margin-top: 10rem;
+    margin-left: 10rem;
+}
+
+/* TEXT FORMATTING */
+h1, h2, h3, h4{
+    margin: 0 0.5rem;   /*NOTICE DIFFERENCE BETWEEN EM AND REM? */
+    font-weight: 400;
+    color: var(--light)
+}
+
+h1 {
+    font-size: 60pt;
+}
+
+h2 {
+    font-size: 28pt;
+}
+
+/* GLOBAL BLOCKS */
+.container-main{
+    max-width: 1200px;
+    margin: auto;
+    border: 1px solid var(--medium);
+}
+.header-main img{
+    display: block;
+    width: 100%;
+}
+
+/* MEDIA QUERIES: ONE "OVER" ("min-width"), and ONE "UNDER" ("max-width")! ;0) */
+
+/* OVER 1600px */
+/* @media (min-width: 1600px) {
+    body{
+        background-color: var(--red-light);
+    }
+} */
+
+/* UNDER 600px */
+/* @media (max-width: 600px) {
+    body{
+        background-color: var(--red-dark);
+    }
+} */

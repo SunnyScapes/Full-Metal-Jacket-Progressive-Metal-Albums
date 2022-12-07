@@ -1,0 +1,11 @@
+/* SECTION GALLERY */
+#section-gallery div {
+    display: grid;
+    gap: 0.5em;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#section-gallery img {
+    width: 100%;
+    cursor: pointer;
+}
